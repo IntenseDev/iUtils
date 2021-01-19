@@ -19,6 +19,10 @@ public class RenameCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
 
+        if (!(sender.hasPermission("iutils.rename"))) {
+            sender.sendMessage(Utils.translate("&cYou do not have permission."));
+        }
+
         StringBuilder builder = new StringBuilder();
         int startArg = 0;
         int endArg = args.length;

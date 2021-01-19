@@ -1,5 +1,6 @@
 package xyz.intensedev.iutil.commands;
 
+import com.mysql.jdbc.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -10,13 +11,16 @@ import org.bukkit.event.server.ServerListPingEvent;
 import xyz.intensedev.iutil.Main;
 import xyz.intensedev.iutil.Utils;
 
-import javax.rmi.CORBA.Util;
 import java.io.IOException;
 
 public class SetMOTDCommand implements CommandExecutor, Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
+
+        if (!(sender.hasPermission("iutils.setmotd"))) {
+            sender.sendMessage(Utils.translate("&cYou do not have permission."));
+        }
 
         StringBuilder builder = new StringBuilder();
         int startArg = 1;

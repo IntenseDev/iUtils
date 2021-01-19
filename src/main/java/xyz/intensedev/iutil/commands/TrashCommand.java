@@ -10,11 +10,14 @@ import org.bukkit.inventory.Inventory;
 import xyz.intensedev.iutil.Main;
 import xyz.intensedev.iutil.Utils;
 
-import javax.rmi.CORBA.Util;
-
 public class TrashCommand implements CommandExecutor {
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
+
+        if (!(sender.hasPermission("iutils.trash"))) {
+            sender.sendMessage(Utils.translate("&cYou do not have permission."));
+        }
 
         if (!(sender instanceof Player)) {
             Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "You must be a player to use this command.");

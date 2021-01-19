@@ -18,6 +18,11 @@ public class SetSlotsCommand implements CommandExecutor, Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
+
+        if (!(sender.hasPermission("iutils.setslots"))) {
+            sender.sendMessage(Utils.translate("&cYou do not have permission."));
+        }
+
         if (args.length != 1) {
             for(String message : Main.getInstance().getConfig().getStringList("SetSlots.HelpMessage")) {
                 sender.sendMessage(Utils.translate(message));
