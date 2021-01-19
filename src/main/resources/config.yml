@@ -1,0 +1,52 @@
+Discord:
+  Enabled: true
+  Message: "&biUtils &7> &aOur discord is discord.yourserver.net"
+
+Store:
+  Enabled: true
+  Message: "&biUtils &7> &aOur store is store.yourserver.net"
+
+TeamSpeak:
+  Enabled: true
+  Message: "&biUtils &7> &aOur teamspeak is ts.yourserver.net"
+
+Twitter:
+  Enabled: true
+  Message: "&biUtils &7> &aOur twitter is twitter.com/yourserver"
+
+Website:
+  Enabled: true
+  Message: "&biUtils &7> &aOur website is www.yourserver.net"
+
+SetSlots:
+  SuccessfulSet:
+    - "&7&m-------------------------------------"
+    - "&aYou have set the max amount to &b%amount%"
+    - "&7&m-------------------------------------"
+  HelpMessage:
+    - "&7&m-------------------------------------"
+    - "&c/setslots <amount>"
+    - "&7&m-------------------------------------"
+  NoNumberMessage: "&cYou have entered an invalid amount."
+
+SetMOTD:
+  HelpMessage:
+    - "&7&m-------------------------------------"
+    - "&c/setmotd <1/2> <motd>"
+    - "&7&m-------------------------------------"
+  SuccessfulSet:
+    - "&7&m-------------------------------------"
+    - "&aYou have updated MOTD &b#%number% &ato &b%motd%"
+    - "&7&m-------------------------------------"
+  NoNumberMessage: "&cYou have entered an invalid amount."
+  MOTD:
+    1: "&bChange the Motd using Config.yml"
+    2: "&aOr /setmotd <1/2> <motd> &c<3 :)"
+
+Rename:
+  SuccessfulRename: "&aYou have successfully renamed &b%item%&a to&r %new-name%"
+
+Trash:
+  Enabled: true
+  Title: "&cTrash"
+  Slots: 27

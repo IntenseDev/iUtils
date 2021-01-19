@@ -1,7 +1,25 @@
 name: iUtils
-main: xyz.intensedev.xyz.intensedev.utils.utils.Main
-authors:
-[
+main: xyz.intensedev.iutil.Main
+authors: [
   Codins & ItsYahoo
 ]
 version: 0.1-BETA
+commands:
+  discord:
+    description: "Shows the discord of the server"
+  store:
+    description: "Shows the store of the server"
+  teamspeak:
+    description: "Shows the teamspeak of the server"
+  twitter:
+    description: "Shows the twitter of the server"
+  website:
+    description: "Shows the website of the server"
+  setslots:
+    description: "Sets the max slots of the server"
+  setmotd:
+    description: "Sets the MOTD of the server"
+  rename:
+    description: "Rename an item in your hand"
+  trash:
+    description: "Open a trashcan to delete items"

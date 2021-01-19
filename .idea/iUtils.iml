@@ -8,7 +8,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="ExoSpigot" level="project" />
-    <orderEntry type="library" name="paperspigot-api-1.7.10" level="project" />
+    <orderEntry type="library" name="PaperSpigot-1.8.8-R0.1-SNAPSHOT-latest" level="project" />
   </component>
 </module>
