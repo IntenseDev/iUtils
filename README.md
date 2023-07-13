@@ -20,7 +20,7 @@ Contacts:
 
 ItsYahoo
 
-✸ Discord: ItsYahoo#2916
+✸ Discord: itsyahoo
 
 ✸ Twitter: https://twitter.com/ItsYahooo
 
@@ -28,8 +28,6 @@ ItsYahoo
 
 Codins
 
-✸ Discord: Codins#2196
-
-✸ Twitter: https://twitter.com/CodinsGG
+✸ Discord: codins
 
 ✸ GitHub: https://github.com/C0dins
